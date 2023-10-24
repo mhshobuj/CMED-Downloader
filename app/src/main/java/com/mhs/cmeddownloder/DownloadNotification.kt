@@ -10,7 +10,7 @@ class DownloadNotification (private val context: Context) {
 
     private val notificationManager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
-    private val channelId = "download_channel"
+    private val channelId = Constants.DOWNLOAD_CHANNEL
     private val notificationId = 1
 
     init {
@@ -21,7 +21,7 @@ class DownloadNotification (private val context: Context) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channel = NotificationChannel(
                 channelId,
-                "Download Channel",
+                Constants.DOWNLOAD_CHANNEL,
                 NotificationManager.IMPORTANCE_LOW
             )
             notificationManager.createNotificationChannel(channel)
