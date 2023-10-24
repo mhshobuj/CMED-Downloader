@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CMED Downloader</string>
+    <string name="start_download">Start download</string>
+    <string name="_0">0</string>
+</resources>
